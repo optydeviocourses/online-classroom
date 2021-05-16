@@ -95,3 +95,14 @@ info All dependencies
 └─ typescript@4.2.4
 ✨  Done in 80.56s.
 ```
+
+Enviando para o 'Github'
+
+```
+git init
+git add .
+git commit -m "Start Project"
+git remote add origin https://github.com/optydeviocourses/online-classroom.git
+git branch -M main
+git push -u origin main
+```

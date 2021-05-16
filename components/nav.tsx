@@ -3,6 +3,7 @@ import Link from 'next/link'
 const links = [
   { href: 'http://github.com/vercel/next.js', label: 'GitHub' },
   { href: 'http://nextjs.org/docs', label: 'Docs' }
+  // https://vercel.com/button
 ]
 
 export default function Nav() {
