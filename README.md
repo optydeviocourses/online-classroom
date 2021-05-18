@@ -96,7 +96,7 @@ info All dependencies
 ✨  Done in 80.56s.
 ```
 
-Enviando para o 'Github'
+### Enviando para o 'Github'
 
 ```
 git init
@@ -106,3 +106,15 @@ git remote add origin https://github.com/optydeviocourses/online-classroom.git
 git branch -M main
 git push -u origin main
 ```
+
+### MongoDb Atlas
+- Configuração:
+```
+mongodb+srv://teach-other:<password>@optydev-io-courses.nffnz.mongodb.net/test
+```
+- Instalação
+```
+> yarn add mongodb
+> yarn add -D @types/mongodb
+```
+
