@@ -1,3 +1,4 @@
+import { NextComponentType } from 'next'
 import Link from 'next/link'
 
 const links = [
@@ -5,8 +6,7 @@ const links = [
   { href: 'http://nextjs.org/docs', label: 'Docs' }
   // https://vercel.com/button
 ]
-
-export default function Nav() {
+const Nav: NextComponentType = () => {
   return (
     <nav>
       <ul className="flex justify-between items-center p-8">
@@ -18,13 +18,21 @@ export default function Nav() {
         <ul className="flex justify-between items-center space-x-4">
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
-              <a href={href} className="btn-blue no-underline">
+              <a
+                href={href}
+                className="btn-blue border-l-2 border-2 px-4 rounded-lg hover:bg-blue-400 transition duration-200 no-underline"
+              >
                 {label}
               </a>
             </li>
           ))}
         </ul>
+        <button className="border-l-2 border-2 px-4 rounded-lg hover:bg-yellow-100 transition duration-200">
+          Sair
+        </button>
       </ul>
     </nav>
   )
 }
+
+export default Nav
